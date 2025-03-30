@@ -1,0 +1,40 @@
+{
+  "name": "@rico-ui/storybook",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build",
+    "lint": "eslint . --ext .ts,.tsx,.js",
+    "clean": "rimraf .turbo && rimraf node_modules && rimraf dist && rimraf storybook-static"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.14.0",
+    "@rico-ui/react": "workspace:*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@rico-ui/eslint-config": "workspace:*",
+    "@rico-ui/tsconfig": "workspace:*",
+    "@storybook/addon-a11y": "^8.6.11",
+    "@storybook/addon-essentials": "^8.6.11",
+    "@storybook/addon-interactions": "^8.6.11",
+    "@storybook/addon-links": "^8.6.11",
+    "@storybook/addon-mdx-gfm": "^8.6.11",
+    "@storybook/addon-viewport": "^8.6.11",
+    "@storybook/blocks": "^8.6.11",
+    "@storybook/react": "^8.6.11",
+    "@storybook/react-vite": "^8.6.11",
+    "@storybook/testing-library": "^0.2.2",
+    "@types/react": "^18.2.42",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.55.0",
+    "rimraf": "^5.0.5",
+    "storybook": "^8.6.11",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.5"
+  }
+}

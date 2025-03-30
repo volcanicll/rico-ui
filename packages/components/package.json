@@ -1,0 +1,41 @@
+{
+  "name": "@rico-ui/react",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react @emotion/react @emotion/styled",
+    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react @emotion/react @emotion/styled",
+    "lint": "eslint src/**/*.ts* --fix",
+    "clean": "rimraf .turbo && rimraf node_modules && rimraf dist"
+  },
+  "devDependencies": {
+    "@rico-ui/eslint-config": "workspace:*",
+    "@rico-ui/tsconfig": "workspace:*",
+    "@types/react": "^18.2.42",
+    "@types/react-dom": "^18.2.17",
+    "eslint": "^8.55.0",
+    "react": "^18.2.0",
+    "rimraf": "^5.0.5",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "@emotion/react": "^11.0.0",
+    "@emotion/styled": "^11.0.0"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
