@@ -10,8 +10,8 @@
     "dist/**"
   ],
   "scripts": {
-    "build": "tsup src/index.tsx --format esm,cjs --dts --external react @emotion/react @emotion/styled",
-    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react @emotion/react @emotion/styled",
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react react-dom react-dom/client @emotion/react @emotion/styled",
+    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react react-dom react-dom/client @emotion/react @emotion/styled",
     "lint": "eslint src/**/*.ts* --fix",
     "clean": "rimraf .turbo && rimraf node_modules && rimraf dist"
   },
